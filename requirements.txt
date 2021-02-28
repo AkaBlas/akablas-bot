@@ -1,0 +1,5 @@
+# Make sure that in pre-commit MyPy gets all dependencies as additional dependencies
+python-telegram-bot>=13.3,<14.0
+git+https://github.com/python-telegram-bot/ptbcontrib.git@5eda3817f8a4ee196dfa37efd5775ed00c7b047c
+pytz
+rapidfuzz==1.1.1

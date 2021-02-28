@@ -1,0 +1,3 @@
+[submodule "docs/source/_static"]
+	path = docs/source/_static
+	url = https://github.com/Bibo-Joshi/sphinx_rtd_theme
