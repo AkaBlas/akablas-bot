@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -90,11 +93,11 @@
               
             
             
-              <p><span class="caption-text">For Users</span></p>
+              <p class="caption" role="heading"><span class="caption-text">For Users</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="userguide.html">Kurzanleitung</a></li>
 </ul>
-<p><span class="caption-text">For Developers</span></p>
+<p class="caption" role="heading"><span class="caption-text">For Developers</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="bot.html">bot package</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">bot.basic Module</a></li>
@@ -177,11 +180,11 @@
            <div itemprop="articleBody">
             
   <section id="module-bot.basic">
-<span id="bot-basic-module"></span><h1>bot.basic Module<a class="headerlink" href="#module-bot.basic" title="Permalink to this headline"></a></h1>
+<span id="bot-basic-module"></span><h1>bot.basic Module<a class="headerlink" href="#module-bot.basic" title="Permalink to this headline">¶</a></h1>
 <p>The module contains functionality for basic commands and functionality.</p>
 <dl class="py function">
-<dt id="bot.basic.info">
-<code class="sig-prename descclassname">bot.basic.</code><code class="sig-name descname">info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">update</span></em>, <em class="sig-param"><span class="n">_</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.basic.info" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.basic.info">
+<span class="sig-prename descclassname"><span class="pre">bot.basic.</span></span><span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.basic.info" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns some info about the bot.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -197,8 +200,8 @@
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.basic.next_sweep">
-<code class="sig-prename descclassname">bot.basic.</code><code class="sig-name descname">next_sweep</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">update</span></em>, <em class="sig-param"><span class="n">context</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.basic.next_sweep" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.basic.next_sweep">
+<span class="sig-prename descclassname"><span class="pre">bot.basic.</span></span><span class="sig-name descname"><span class="pre">next_sweep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.basic.next_sweep" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tells the user who’s turn on cleaning the rehearsal room it is on the upcoming tuesday and the
 one after.</p>
 <dl class="field-list simple">
@@ -215,8 +218,8 @@ one after.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.basic.pause_unpause">
-<code class="sig-prename descclassname">bot.basic.</code><code class="sig-name descname">pause_unpause</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">update</span></em>, <em class="sig-param"><span class="n">context</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.basic.pause_unpause" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.basic.pause_unpause">
+<span class="sig-prename descclassname"><span class="pre">bot.basic.</span></span><span class="sig-name descname"><span class="pre">pause_unpause</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.basic.pause_unpause" title="Permalink to this definition">¶</a></dt>
 <dd><p>Pauses or unpauses the bot. Informs the user about the result.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -232,8 +235,8 @@ one after.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.basic.weekly_job">
-<code class="sig-prename descclassname">bot.basic.</code><code class="sig-name descname">weekly_job</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.basic.weekly_job" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.basic.weekly_job">
+<span class="sig-prename descclassname"><span class="pre">bot.basic.</span></span><span class="sig-name descname"><span class="pre">weekly_job</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.basic.weekly_job" title="Permalink to this definition">¶</a></dt>
 <dd><p>If not currently paused, sends a message to all groups in the <a class="reference internal" href="bot.constants.html#bot.constants.BOARD_ROLE" title="bot.constants.BOARD_ROLE"><code class="xref py py-attr docutils literal notranslate"><span class="pre">bot.constants.BOARD_ROLE</span></code></a>
 and <a class="reference internal" href="bot.constants.html#bot.constants.WATCHER_ROLE" title="bot.constants.WATCHER_ROLE"><code class="xref py py-attr docutils literal notranslate"><span class="pre">bot.constants.WATCHER_ROLE</span></code></a> roles</p>
 <dl class="field-list simple">

@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -90,11 +93,11 @@
               
             
             
-              <p><span class="caption-text">For Users</span></p>
+              <p class="caption" role="heading"><span class="caption-text">For Users</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="userguide.html">Kurzanleitung</a></li>
 </ul>
-<p><span class="caption-text">For Developers</span></p>
+<p class="caption" role="heading"><span class="caption-text">For Developers</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="bot.html">bot package</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="bot.basic.html">bot.basic Module</a></li>
@@ -177,11 +180,11 @@
            <div itemprop="articleBody">
             
   <section id="module-bot.constants">
-<span id="bot-constants-module"></span><h1>bot.constants Module<a class="headerlink" href="#module-bot.constants" title="Permalink to this headline"></a></h1>
+<span id="bot-constants-module"></span><h1>bot.constants Module<a class="headerlink" href="#module-bot.constants" title="Permalink to this headline">¶</a></h1>
 <p>The module contains constants used throughout the bot.</p>
 <dl class="py data">
-<dt id="bot.constants.ADD_USER">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">ADD_USER</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = 'add_user {} {}'</em><a class="headerlink" href="#bot.constants.ADD_USER" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.ADD_USER">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">ADD_USER</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'add_user</span> <span class="pre">{}</span> <span class="pre">{}'</span></em><a class="headerlink" href="#bot.constants.ADD_USER" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback data to add a user. Use as <code class="docutils literal notranslate"><span class="pre">ADD_USER.format(role_name,</span> <span class="pre">user_id)</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -191,8 +194,8 @@
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.ADD_USER_PATTERN">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">ADD_USER_PATTERN</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = '^add_user (board_role|watcher_role) (\\d+)$'</em><a class="headerlink" href="#bot.constants.ADD_USER_PATTERN" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.ADD_USER_PATTERN">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">ADD_USER_PATTERN</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'^add_user</span> <span class="pre">(board_role|watcher_role)</span> <span class="pre">(\\d+)$'</span></em><a class="headerlink" href="#bot.constants.ADD_USER_PATTERN" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback data to catch <a class="reference internal" href="#bot.constants.ADD_USER" title="bot.constants.ADD_USER"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ADD_USER</span></code></a>. The selected role and user id will be
 available as matches.</p>
 <dl class="field-list simple">
@@ -203,8 +206,8 @@ available as matches.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.BOARD_ROLE">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">BOARD_ROLE</code><em class="property"> = 'board_role'</em><a class="headerlink" href="#bot.constants.BOARD_ROLE" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.BOARD_ROLE">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">BOARD_ROLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'board_role'</span></em><a class="headerlink" href="#bot.constants.BOARD_ROLE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Name of the <code class="xref py py-class docutils literal notranslate"><span class="pre">ptbcontrib.roles.Role</span></code> for the board.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -214,8 +217,8 @@ available as matches.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.HOMEPAGE">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">HOMEPAGE</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = 'https://hirschheissich.gitlab.io/akablas-bot/'</em><a class="headerlink" href="#bot.constants.HOMEPAGE" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.HOMEPAGE">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">HOMEPAGE</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'https://hirschheissich.gitlab.io/akablas-bot/'</span></em><a class="headerlink" href="#bot.constants.HOMEPAGE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Homepage of this bot.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -225,8 +228,8 @@ available as matches.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.INSTRUMENTS">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">INSTRUMENTS</code><em class="property">: List<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a><span class="p">]</span></em><em class="property"> = ['Flöten &amp; Oboen', 'Klarinetten', 'Altsaxsophone', 'Tenorsaxophone, Baritonsaxophone', 'Trompeten', 'Flügelhörner', 'Tenorhörner, Hörner, Baritone, Fagotte', 'Posaunen', 'Tuben, Gitarren, Bässe']</em><a class="headerlink" href="#bot.constants.INSTRUMENTS" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.INSTRUMENTS">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">INSTRUMENTS</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['Flöten</span> <span class="pre">&amp;</span> <span class="pre">Oboen',</span> <span class="pre">'Klarinetten',</span> <span class="pre">'Altsaxsophone',</span> <span class="pre">'Tenorsaxophone,</span> <span class="pre">Baritonsaxophone',</span> <span class="pre">'Trompeten',</span> <span class="pre">'Flügelhörner',</span> <span class="pre">'Tenorhörner,</span> <span class="pre">Hörner,</span> <span class="pre">Baritone,</span> <span class="pre">Fagotte',</span> <span class="pre">'Posaunen',</span> <span class="pre">'Tuben,</span> <span class="pre">Gitarren,</span> <span class="pre">Bässe']</span></em><a class="headerlink" href="#bot.constants.INSTRUMENTS" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of instrument groups in the order that they be assigned to swipe the
 rehearsal room.</p>
 <dl class="field-list simple">
@@ -237,8 +240,8 @@ rehearsal room.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.LAST_SWEEP_KEY">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">LAST_SWEEP_KEY</code><em class="property"> = 'offset'</em><a class="headerlink" href="#bot.constants.LAST_SWEEP_KEY" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.LAST_SWEEP_KEY">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">LAST_SWEEP_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'offset'</span></em><a class="headerlink" href="#bot.constants.LAST_SWEEP_KEY" title="Permalink to this definition">¶</a></dt>
 <dd><p>Key for the <code class="docutils literal notranslate"><span class="pre">bot_data</span></code>. The corresponding value is expected to be a tuple of
 <a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime.date</span></code></a> and <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>, where the latter is an index of <a class="reference internal" href="#bot.constants.INSTRUMENTS" title="bot.constants.INSTRUMENTS"><code class="xref py py-attr docutils literal notranslate"><span class="pre">INSTRUMENTS</span></code></a>
 stating which instrument groups turn to swipe it was at the specified date of the last
@@ -251,8 +254,8 @@ rehearsal.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.PAUSED_KEY">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">PAUSED_KEY</code><em class="property"> = 'paused'</em><a class="headerlink" href="#bot.constants.PAUSED_KEY" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.PAUSED_KEY">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">PAUSED_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'paused'</span></em><a class="headerlink" href="#bot.constants.PAUSED_KEY" title="Permalink to this definition">¶</a></dt>
 <dd><p>Key for the <code class="docutils literal notranslate"><span class="pre">bot_data</span></code>. The corresponding value is expected to be a
 <a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime.date</span></code></a> indicating the start of the pause, if rehearsals are paused, or
 <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p>
@@ -264,8 +267,8 @@ rehearsal.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.PAUSED_WEEKS_KEY">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">PAUSED_WEEKS_KEY</code><em class="property"> = 'paused_weeks'</em><a class="headerlink" href="#bot.constants.PAUSED_WEEKS_KEY" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.PAUSED_WEEKS_KEY">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">PAUSED_WEEKS_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'paused_weeks'</span></em><a class="headerlink" href="#bot.constants.PAUSED_WEEKS_KEY" title="Permalink to this definition">¶</a></dt>
 <dd><p>Key for the <code class="docutils literal notranslate"><span class="pre">bot_data</span></code>. The corresponding value is expected to be a set of
 <a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime.date</span></code></a> objects specifying tuesdays without rehearsal.</p>
 <dl class="field-list simple">
@@ -276,8 +279,8 @@ rehearsal.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.PAUSE_BUTTON">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">PAUSE_BUTTON</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = 'pause_button {} {}'</em><a class="headerlink" href="#bot.constants.PAUSE_BUTTON" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.PAUSE_BUTTON">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">PAUSE_BUTTON</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'pause_button</span> <span class="pre">{}</span> <span class="pre">{}'</span></em><a class="headerlink" href="#bot.constants.PAUSE_BUTTON" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback data to pause a week. Use as <code class="docutils literal notranslate"><span class="pre">PAUSE_BUTTON.format(date.isoformat(),</span> <span class="pre">paused)</span></code></p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -287,8 +290,8 @@ rehearsal.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.PAUSE_BUTTON_PATTERN">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">PAUSE_BUTTON_PATTERN</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = '^pause_button (\\d{4}-\\d{2}-\\d{2}) (True|False)$'</em><a class="headerlink" href="#bot.constants.PAUSE_BUTTON_PATTERN" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.PAUSE_BUTTON_PATTERN">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">PAUSE_BUTTON_PATTERN</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'^pause_button</span> <span class="pre">(\\d{4}-\\d{2}-\\d{2})</span> <span class="pre">(True|False)$'</span></em><a class="headerlink" href="#bot.constants.PAUSE_BUTTON_PATTERN" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback data to catch <a class="reference internal" href="#bot.constants.PAUSE_BUTTON_PATTERN" title="bot.constants.PAUSE_BUTTON_PATTERN"><code class="xref py py-attr docutils literal notranslate"><span class="pre">PAUSE_BUTTON_PATTERN</span></code></a>. The selected tuesday and whether a
 rehearsal should take place or not will be available as matches.</p>
 <dl class="field-list simple">
@@ -299,8 +302,8 @@ rehearsal should take place or not will be available as matches.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.PAUSE_NAVIGATION_BUTTON">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">PAUSE_NAVIGATION_BUTTON</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = 'pause_nav_button {}'</em><a class="headerlink" href="#bot.constants.PAUSE_NAVIGATION_BUTTON" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.PAUSE_NAVIGATION_BUTTON">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">PAUSE_NAVIGATION_BUTTON</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'pause_nav_button</span> <span class="pre">{}'</span></em><a class="headerlink" href="#bot.constants.PAUSE_NAVIGATION_BUTTON" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback data to navigate between weeks while pausing a weeks. Use as
 <code class="docutils literal notranslate"><span class="pre">PAUSE_NAVIGATION_BUTTON.format(date.isoformat())</span></code>.</p>
 <dl class="field-list simple">
@@ -311,8 +314,8 @@ rehearsal should take place or not will be available as matches.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.PAUSE_NAVIGATION_BUTTON_PATTERN">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">PAUSE_NAVIGATION_BUTTON_PATTERN</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = '^pause_nav_button (\\d{4}-\\d{2}-\\d{2})$'</em><a class="headerlink" href="#bot.constants.PAUSE_NAVIGATION_BUTTON_PATTERN" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.PAUSE_NAVIGATION_BUTTON_PATTERN">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">PAUSE_NAVIGATION_BUTTON_PATTERN</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'^pause_nav_button</span> <span class="pre">(\\d{4}-\\d{2}-\\d{2})$'</span></em><a class="headerlink" href="#bot.constants.PAUSE_NAVIGATION_BUTTON_PATTERN" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback data to catch <a class="reference internal" href="#bot.constants.PAUSE_NAVIGATION_BUTTON" title="bot.constants.PAUSE_NAVIGATION_BUTTON"><code class="xref py py-attr docutils literal notranslate"><span class="pre">PAUSE_NAVIGATION_BUTTON</span></code></a>. The selected tuesday will be
 available as match.</p>
 <dl class="field-list simple">
@@ -323,8 +326,8 @@ available as match.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.PAUSE_NAVIGATION_DONE">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">PAUSE_NAVIGATION_DONE</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = 'pause_navigation_done'</em><a class="headerlink" href="#bot.constants.PAUSE_NAVIGATION_DONE" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.PAUSE_NAVIGATION_DONE">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">PAUSE_NAVIGATION_DONE</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'pause_navigation_done'</span></em><a class="headerlink" href="#bot.constants.PAUSE_NAVIGATION_DONE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback data to finish pausing weeks.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -334,8 +337,8 @@ available as match.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.PROMOTE_USER">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">PROMOTE_USER</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = 'promote_user {} {}'</em><a class="headerlink" href="#bot.constants.PROMOTE_USER" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.PROMOTE_USER">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">PROMOTE_USER</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'promote_user</span> <span class="pre">{}</span> <span class="pre">{}'</span></em><a class="headerlink" href="#bot.constants.PROMOTE_USER" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback data to promote a user. Use as <code class="docutils literal notranslate"><span class="pre">PROMOTE_USER.format(promote_bool,</span> <span class="pre">user_id)</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -345,8 +348,8 @@ available as match.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.PROMOTE_USER_PATTERN">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">PROMOTE_USER_PATTERN</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = '^promote_user (True|False) (\\d+)$'</em><a class="headerlink" href="#bot.constants.PROMOTE_USER_PATTERN" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.PROMOTE_USER_PATTERN">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">PROMOTE_USER_PATTERN</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'^promote_user</span> <span class="pre">(True|False)</span> <span class="pre">(\\d+)$'</span></em><a class="headerlink" href="#bot.constants.PROMOTE_USER_PATTERN" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback data to catch <a class="reference internal" href="#bot.constants.PROMOTE_USER" title="bot.constants.PROMOTE_USER"><code class="xref py py-attr docutils literal notranslate"><span class="pre">PROMOTE_USER</span></code></a>. The boolean and user id will be available
 as matches.</p>
 <dl class="field-list simple">
@@ -357,8 +360,8 @@ as matches.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.TIMEZONE">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">TIMEZONE</code><em class="property">: pytz.tzinfo.BaseTzInfo</em><em class="property"> = &lt;DstTzInfo 'Europe/Berlin' LMT+0:53:00 STD&gt;</em><a class="headerlink" href="#bot.constants.TIMEZONE" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.TIMEZONE">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">TIMEZONE</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">pytz.tzinfo.BaseTzInfo</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;DstTzInfo</span> <span class="pre">'Europe/Berlin'</span> <span class="pre">LMT+0:53:00</span> <span class="pre">STD&gt;</span></em><a class="headerlink" href="#bot.constants.TIMEZONE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Timezone object for Europe/Berlin</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -368,8 +371,8 @@ as matches.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.USER_GUIDE">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">USER_GUIDE</code><em class="property">: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></em><em class="property"> = 'https://hirschheissich.gitlab.io/akablas-bot/userguide.html'</em><a class="headerlink" href="#bot.constants.USER_GUIDE" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.USER_GUIDE">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">USER_GUIDE</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'https://hirschheissich.gitlab.io/akablas-bot/userguide.html'</span></em><a class="headerlink" href="#bot.constants.USER_GUIDE" title="Permalink to this definition">¶</a></dt>
 <dd><p>User guide for this bot.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -379,8 +382,8 @@ as matches.</p>
 </dd></dl>
 
 <dl class="py data">
-<dt id="bot.constants.WATCHER_ROLE">
-<code class="sig-prename descclassname">bot.constants.</code><code class="sig-name descname">WATCHER_ROLE</code><em class="property"> = 'watcher_role'</em><a class="headerlink" href="#bot.constants.WATCHER_ROLE" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.constants.WATCHER_ROLE">
+<span class="sig-prename descclassname"><span class="pre">bot.constants.</span></span><span class="sig-name descname"><span class="pre">WATCHER_ROLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'watcher_role'</span></em><a class="headerlink" href="#bot.constants.WATCHER_ROLE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Name of the <code class="xref py py-class docutils literal notranslate"><span class="pre">ptbcontrib.roles.Role</span></code> for the watchers, i.e. chats that can see
 who’s turn it is for swiping but can’t administrate the bot.</p>
 <dl class="field-list simple">

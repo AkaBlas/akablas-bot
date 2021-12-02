@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -90,11 +93,11 @@
               
             
             
-              <p><span class="caption-text">For Users</span></p>
+              <p class="caption" role="heading"><span class="caption-text">For Users</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="userguide.html">Kurzanleitung</a></li>
 </ul>
-<p><span class="caption-text">For Developers</span></p>
+<p class="caption" role="heading"><span class="caption-text">For Developers</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="bot.html">bot package</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="bot.basic.html">bot.basic Module</a></li>
@@ -177,11 +180,11 @@
            <div itemprop="articleBody">
             
   <section id="module-bot.setup">
-<span id="bot-setup-module"></span><h1>bot.setup Module<a class="headerlink" href="#module-bot.setup" title="Permalink to this headline"></a></h1>
+<span id="bot-setup-module"></span><h1>bot.setup Module<a class="headerlink" href="#module-bot.setup" title="Permalink to this headline">¶</a></h1>
 <p>The module contains functions that register the handlers.</p>
 <dl class="py function">
-<dt id="bot.setup.setup_dispatcher">
-<code class="sig-prename descclassname">bot.setup.</code><code class="sig-name descname">setup_dispatcher</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dispatcher</span></em>, <em class="sig-param"><span class="n">admin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.setup.setup_dispatcher" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.setup.setup_dispatcher">
+<span class="sig-prename descclassname"><span class="pre">bot.setup.</span></span><span class="sig-name descname"><span class="pre">setup_dispatcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dispatcher</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">admin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.setup.setup_dispatcher" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers the different handlers, prepares <code class="docutils literal notranslate"><span class="pre">chat/user/bot_data</span></code> etc.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

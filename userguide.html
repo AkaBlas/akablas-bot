@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -90,7 +93,7 @@
               
             
             
-              <p><span class="caption-text">For Users</span></p>
+              <p class="caption" role="heading"><span class="caption-text">For Users</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Kurzanleitung</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#grundfunktionen">Grundfunktionen</a></li>
@@ -105,7 +108,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">For Developers</span></p>
+<p class="caption" role="heading"><span class="caption-text">For Developers</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="bot.html">bot package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
@@ -179,14 +182,14 @@
            <div itemprop="articleBody">
             
   <section id="kurzanleitung">
-<h1>Kurzanleitung<a class="headerlink" href="#kurzanleitung" title="Permalink to this headline"></a></h1>
+<h1>Kurzanleitung<a class="headerlink" href="#kurzanleitung" title="Permalink to this headline">¶</a></h1>
 <section id="grundfunktionen">
-<h2>Grundfunktionen<a class="headerlink" href="#grundfunktionen" title="Permalink to this headline"></a></h2>
+<h2>Grundfunktionen<a class="headerlink" href="#grundfunktionen" title="Permalink to this headline">¶</a></h2>
 <p>Die Hauptaufgabe des Bots ist es, den Vorstand daran zu erinnern, wer fegen muss. Dafür schickt er jeden Dienstag um 20:30 Uhr eine Nachricht an alle dafür registriertern Telegram-Gruppen (mehr dazu unten).</p>
 <p>Die Info kann auch manuell über den Befehl <code class="docutils literal notranslate"><span class="pre">/fegen</span></code> abgerufen werden.</p>
 </section>
 <section id="proben-pausieren">
-<h2>Proben Pausieren<a class="headerlink" href="#proben-pausieren" title="Permalink to this headline"></a></h2>
+<h2>Proben Pausieren<a class="headerlink" href="#proben-pausieren" title="Permalink to this headline">¶</a></h2>
 <p>Es gibt zwei Arten, dem Bot mitzuteilen, dass die Proben pausiert sind:</p>
 <ol class="arabic">
 <li><p>Über den Befehl <code class="docutils literal notranslate"><span class="pre">/proben_aussetzen</span></code> können einzelne Wochen pausiert (oder ent-pausiert) werden. An den entsprechenden Dienstagen schickt der Bot keine Nachricht.</p></li>
@@ -199,13 +202,13 @@
 </ol>
 </section>
 <section id="reihenfolge-anpassen">
-<h2>Reihenfolge anpassen<a class="headerlink" href="#reihenfolge-anpassen" title="Permalink to this headline"></a></h2>
+<h2>Reihenfolge anpassen<a class="headerlink" href="#reihenfolge-anpassen" title="Permalink to this headline">¶</a></h2>
 <p>Ist mal etwas schief gegangen, kann die Reihenfolge der Register über den Befehl <code class="docutils literal notranslate"><span class="pre">/setze_naechsten</span></code> angpasst werden. In der nächsten Woche ist dann das ausgewählte Register an der Reihe. Danach geht es mit dem entsprechend nächsten Register weiter.</p>
 </section>
 <section id="zugriffsrechte">
-<h2>Zugriffsrechte<a class="headerlink" href="#zugriffsrechte" title="Permalink to this headline"></a></h2>
+<h2>Zugriffsrechte<a class="headerlink" href="#zugriffsrechte" title="Permalink to this headline">¶</a></h2>
 <section id="rollen">
-<h3>Rollen<a class="headerlink" href="#rollen" title="Permalink to this headline"></a></h3>
+<h3>Rollen<a class="headerlink" href="#rollen" title="Permalink to this headline">¶</a></h3>
 <p>Es gibt zwei Arten von Zugriffsrechten:</p>
 <ol class="arabic simple">
 <li><p>Admins. Diese Rolle ist für den Vorstand vorgesehen. Admins können Zugriffsrechte beliebig ändern, Proben pausieren, den Befehl <code class="docutils literal notranslate"><span class="pre">/fegen</span></code> ausführen und Gruppen registrieren/entfernen.</p></li>
@@ -214,7 +217,7 @@
 <p>Sämtliche Nuzter können über den Befehl <code class="docutils literal notranslate"><span class="pre">/nutzer_anzeigen</span></code> angezeigt werden.</p>
 </section>
 <section id="gruppen-fur-wochentliche-nachricht-registrieren">
-<h3>Gruppen für wöchentliche Nachricht registrieren<a class="headerlink" href="#gruppen-fur-wochentliche-nachricht-registrieren" title="Permalink to this headline"></a></h3>
+<h3>Gruppen für wöchentliche Nachricht registrieren<a class="headerlink" href="#gruppen-fur-wochentliche-nachricht-registrieren" title="Permalink to this headline">¶</a></h3>
 <p>Damit in einer Telegram-Gruppe die wöchentliche Nachricht erhält, sind zwei Schritte nötig:</p>
 <ol class="arabic simple">
 <li><p>Der Bot muss der Gruppe hinzugefügt werden.</p></li>
@@ -223,7 +226,7 @@
 <p>Damit die Gruppe die wöchentliche Nachricht nicht mehr erhält, muss der Befehl <code class="docutils literal notranslate"><span class="pre">/gruppenrechte_aendern</span></code> erneut von einem Admin ausgeführt werden. Anschließend kann der Bot aus der Gruppe entfernt werden. Alternativ können Admins die Zuschauer-Gruppen auch wie folgt verwalten:</p>
 </section>
 <section id="zugriffsrechte-verwalten">
-<h3>Zugriffsrechte verwalten<a class="headerlink" href="#zugriffsrechte-verwalten" title="Permalink to this headline"></a></h3>
+<h3>Zugriffsrechte verwalten<a class="headerlink" href="#zugriffsrechte-verwalten" title="Permalink to this headline">¶</a></h3>
 <p>Um Nutzer als Admins/Zuschauer hinzuzufügen oder Nutzer/Gruppen als Admin oder Zuschauer zu entfernen stehen die Befehle <code class="docutils literal notranslate"><span class="pre">/nutzer_hinzufuegen</span></code> und <code class="docutils literal notranslate"><span class="pre">/nutzer_entfernen</span></code> zur Verfügung. Sie können nur von Admins benutzt werden.</p>
 </section>
 </section>

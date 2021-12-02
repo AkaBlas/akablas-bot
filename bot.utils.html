@@ -14,6 +14,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -32,6 +34,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -90,11 +93,11 @@
               
             
             
-              <p><span class="caption-text">For Users</span></p>
+              <p class="caption" role="heading"><span class="caption-text">For Users</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="userguide.html">Kurzanleitung</a></li>
 </ul>
-<p><span class="caption-text">For Developers</span></p>
+<p class="caption" role="heading"><span class="caption-text">For Developers</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="bot.html">bot package</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="bot.basic.html">bot.basic Module</a></li>
@@ -177,11 +180,11 @@
            <div itemprop="articleBody">
             
   <section id="module-bot.utils">
-<span id="bot-utils-module"></span><h1>bot.utils Module<a class="headerlink" href="#module-bot.utils" title="Permalink to this headline"></a></h1>
+<span id="bot-utils-module"></span><h1>bot.utils Module<a class="headerlink" href="#module-bot.utils" title="Permalink to this headline">¶</a></h1>
 <p>The module contains functionality for changing the order of instrument groups.</p>
 <dl class="py function">
-<dt id="bot.utils.chat2str">
-<code class="sig-prename descclassname">bot.utils.</code><code class="sig-name descname">chat2str</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">chat_id</span></em>, <em class="sig-param"><span class="n">bot</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.chat2str" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.utils.chat2str">
+<span class="sig-prename descclassname"><span class="pre">bot.utils.</span></span><span class="sig-name descname"><span class="pre">chat2str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bot</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.chat2str" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a chat id, returns a string representation of the chat as combination of first name,
 last name, username and chat title.</p>
 <p>In case fetching the chat via <a class="reference external" href="https://python-telegram-bot.readthedocs.io/en/latest/telegram.bot.html#telegram.Bot.get_chat" title="(in python-telegram-bot v13.8.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">telegram.Bot.get_chat()</span></code></a> fails, the output is
@@ -203,8 +206,8 @@ last name, username and chat title.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.utils.iter_tuesdays">
-<code class="sig-prename descclassname">bot.utils.</code><code class="sig-name descname">iter_tuesdays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">from_date</span></em>, <em class="sig-param"><span class="n">until_date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.iter_tuesdays" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.utils.iter_tuesdays">
+<span class="sig-prename descclassname"><span class="pre">bot.utils.</span></span><span class="sig-name descname"><span class="pre">iter_tuesdays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">until_date</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.iter_tuesdays" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gives an iterator allowing to iterate over the tuesdays from <code class="xref py py-attr docutils literal notranslate"><span class="pre">from_date</span></code> to
 <code class="xref py py-attr docutils literal notranslate"><span class="pre">until_date</span></code>. Both dates must be tuesdays.</p>
 <div class="admonition note">
@@ -225,8 +228,8 @@ last name, username and chat title.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.utils.next_sweep_text">
-<code class="sig-prename descclassname">bot.utils.</code><code class="sig-name descname">next_sweep_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context</span></em>, <em class="sig-param"><span class="n">html</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.next_sweep_text" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.utils.next_sweep_text">
+<span class="sig-prename descclassname"><span class="pre">bot.utils.</span></span><span class="sig-name descname"><span class="pre">next_sweep_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">html</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.next_sweep_text" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tells you, whe needs to sweep this week an next.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -243,8 +246,8 @@ last name, username and chat title.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.utils.next_tuesday">
-<code class="sig-prename descclassname">bot.utils.</code><code class="sig-name descname">next_tuesday</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em>, <em class="sig-param"><span class="n">allow_today</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.next_tuesday" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.utils.next_tuesday">
+<span class="sig-prename descclassname"><span class="pre">bot.utils.</span></span><span class="sig-name descname"><span class="pre">next_tuesday</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_today</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.next_tuesday" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gives the date of the tuesday following the given datetime.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -264,8 +267,8 @@ Otherwise the next week is forced. Defaults to <a class="reference external" hre
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.utils.parse_pprint">
-<code class="sig-prename descclassname">bot.utils.</code><code class="sig-name descname">parse_pprint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.parse_pprint" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.utils.parse_pprint">
+<span class="sig-prename descclassname"><span class="pre">bot.utils.</span></span><span class="sig-name descname"><span class="pre">parse_pprint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.parse_pprint" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reverse operation for <a class="reference internal" href="#bot.utils.pprint" title="bot.utils.pprint"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pprint()</span></code></a>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -278,8 +281,8 @@ Otherwise the next week is forced. Defaults to <a class="reference external" hre
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.utils.pprint">
-<code class="sig-prename descclassname">bot.utils.</code><code class="sig-name descname">pprint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.pprint" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.utils.pprint">
+<span class="sig-prename descclassname"><span class="pre">bot.utils.</span></span><span class="sig-name descname"><span class="pre">pprint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.pprint" title="Permalink to this definition">¶</a></dt>
 <dd><p>Thin wrapper for <a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date.strftime" title="(in Python v3.10)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">datetime.date.strftime()</span></code></a> to achieve consistent formatting.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -292,8 +295,8 @@ Otherwise the next week is forced. Defaults to <a class="reference external" hre
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.utils.previous_tuesday">
-<code class="sig-prename descclassname">bot.utils.</code><code class="sig-name descname">previous_tuesday</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em>, <em class="sig-param"><span class="n">allow_today</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.previous_tuesday" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.utils.previous_tuesday">
+<span class="sig-prename descclassname"><span class="pre">bot.utils.</span></span><span class="sig-name descname"><span class="pre">previous_tuesday</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_today</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.previous_tuesday" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gives the date of the tuesday before the given datetime.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -313,8 +316,8 @@ Otherwise the next week is forced. Defaults to <a class="reference external" hre
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.utils.rehearsal_time">
-<code class="sig-prename descclassname">bot.utils.</code><code class="sig-name descname">rehearsal_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.rehearsal_time" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.utils.rehearsal_time">
+<span class="sig-prename descclassname"><span class="pre">bot.utils.</span></span><span class="sig-name descname"><span class="pre">rehearsal_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.rehearsal_time" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gives the rehearsal time (7:30 pm) as <a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.time" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime.time</span></code></a> object localized as
 <code class="xref py py-attr docutils literal notranslate"><span class="pre">bot.utils.TIMEZONE</span></code>.</p>
 <dl class="field-list simple">
@@ -328,8 +331,8 @@ Otherwise the next week is forced. Defaults to <a class="reference external" hre
 </dd></dl>
 
 <dl class="py function">
-<dt id="bot.utils.str2bool">
-<code class="sig-prename descclassname">bot.utils.</code><code class="sig-name descname">str2bool</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">str_input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.str2bool" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bot.utils.str2bool">
+<span class="sig-prename descclassname"><span class="pre">bot.utils.</span></span><span class="sig-name descname"><span class="pre">str2bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">str_input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bot.utils.str2bool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Shortcut for converting <code class="docutils literal notranslate"><span class="pre">str(boolean_input)</span></code> back to a boolean.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
