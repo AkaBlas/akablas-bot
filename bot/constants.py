@@ -21,7 +21,7 @@ rehearsal room.
 """
 
 
-HOMEPAGE: str = 'https://hirschheissich.gitlab.io/akablas-bot/'
+HOMEPAGE: str = 'https://akablas.github.io/akablas-bot/'
 """:obj:`str`: Homepage of this bot."""
 USER_GUIDE: str = f'{HOMEPAGE}userguide.html'
 """:obj:`str`: User guide for this bot."""
