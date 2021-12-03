@@ -37,7 +37,7 @@ Ein Telegram Bot, der dem Vorstand der »Akademische Bläservereinigung an der T
 
 Auf Telegram ist er als `@AkaBlasBot <https://t.me/AkaBlasBot>`_ zu finden.
 
-Eine Kurzanleitung gibt es `hier <https://hirschheissich.gitlab.com/akablas-bot/userguide>`_.
+Eine Kurzanleitung gibt es `hier <https://akablas.github.io/akablas-bot/userguide>`_.
 
 English
 -------
@@ -46,4 +46,4 @@ A simple Telegram bot designed to help the board of  »Akademische Bläserverein
 
 Find it on Telegram as `@AkaBlasBot <https://t.me/AkaBlasBot>`_.
 
-A quickstart guide in german can be found `here <https://hirschheissich.gitlab.com/akablas-bot/userguide>`_.
+A quickstart guide in german can be found `here <https://akablas.github.io/akablas-bot/userguide>`_.
